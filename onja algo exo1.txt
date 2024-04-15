@@ -1,0 +1,42 @@
+Générer de nouvelles suggestions
+Algorithme
+Fonction: Fonction logique (ET, OU, NON, etc.)
+Entrées:
+* nb_variables: Nombre de variables booléennes
+* fonction: Fonction logique sous forme de chaîne de caractères
+
+Sorties:
+* Table de vérité de la fonction
+* Première forme canonique (SOP)
+* Seconde forme canonique (POS)
+
+Étapes:
+
+Définir les variables:
+
+variables: Liste des noms des variables booléennes (ex: ["A", "B"])
+valeurs: Liste des valeurs booléennes possibles (True, False)
+table_verite: Tableau vide pour stocker la table de vérité
+Créer la table de vérité:
+
+Pour chaque combinaison de valeurs booléennes (une ligne par combinaison):
+Afficher les valeurs des variables
+Calculer le résultat de la fonction pour cette combinaison
+Ajouter le résultat à la table de vérité
+Déterminer la SOP:
+
+Pour chaque ligne de la table de vérité où le résultat est True:
+Créer une expression logique avec les variables et les opérateurs ET/OU
+Ajouter l'expression à une liste de clauses
+Combiner les clauses avec l'opérateur OU pour obtenir la SOP
+Déterminer la POS:
+
+Pour chaque ligne de la table de vérité où le résultat est False:
+Créer une expression logique avec les variables et les opérateurs NON/OU
+Ajouter l'expression à une liste de clauses
+Combiner les clauses avec l'opérateur ET pour obtenir la POS
+Afficher la table de vérité, la SOP et la POS:
+
+Afficher la table de vérité sous forme de tableau
+Afficher la SOP sous forme d'expression logique
+Afficher la POS sous forme d'expression logique
